@@ -78,4 +78,37 @@ console.log("After: " + JSON.stringify(testArr));
 
 //Note: The best in this Doc's Orientation is yet to come...
 ---
+# Filter()
+Simply, Filters the array!.
+it makes a new array with the conditioned elements only.
+
+Example:
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const oddNumbers = numbers.filter((num) => num % 2 !== 0);
+console.log(oddNumbers); // Output: [1, 3, 5, 7, 9]
+
+---
+# Map()
+It maps each element into a function written by us, and make changes to each element. Then Creates a new array with these new modified elemnts.
+
+Example:
+
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map((num) => num * 2);
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+---
+# Conditional Ternary Operators
+Is simply a short cut for a conditional if else / else if statements!
+
+Example:
+
+const Major_Years = 4;
+const isProgrammer = Major_Years = 5 ? "Computer Engineer" : "Computer Scientist";
+
+console.log(isProgrammer); // Output: "Computer Scientist"
+
+
 

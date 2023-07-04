@@ -110,5 +110,20 @@ const isProgrammer = Major_Years = 5 ? "Computer Engineer" : "Computer Scientist
 
 console.log(isProgrammer); // Output: "Computer Scientist"
 
+---
+# Functions
+Group of lines of code that are executed on demand!.
 
+Example:
 
+const divide (x, y) => {
+return x/y;
+}
+
+const whisper (x) => {
+return x.toLowerCase();
+}
+
+const shorterThan(arr1, arr2) => {
+return arr1.length > arr2.length
+}

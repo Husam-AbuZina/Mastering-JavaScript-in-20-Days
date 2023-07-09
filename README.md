@@ -16,9 +16,15 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
  - [Deep JavaScript Foundations, v3](https://frontendmasters.com/courses/deep-javascript-v3/)
 
 ## Folder Structure
+
+#### JavaScript: From First Steps to Professional
 -  [**Day 1**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%201%20👨%E2%80%8D💻)
 -  [**Day 2**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%202.md)
 -  [**Day 3**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%203.md)
 -  [**Day 4**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%204.md)
 -  [**Day 5**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%205.md)
 
+---
+
+#### JavaScript: The Hard Parts, v2
+-  [**Day 6**]()

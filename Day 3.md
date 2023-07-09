@@ -1,5 +1,4 @@
-
-# Day 2:
+# Day 3:
 
 ## Summary of the course
 

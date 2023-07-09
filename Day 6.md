@@ -1,10 +1,58 @@
 # Day 6:
 
-## Summary of the course
+## Summary of the course 
+
+### Generalization
+
+```javascript
+// --------------------------- Wrong (Speciallaizing) ---------------------------
+
+function squareNine () {    // DRY: Don't Re[eat Yourself.
+return 9 * 9;
+}
+
+// --------------------------- Correct (Generalizing) ---------------------------
+
+function suqreNum (num) {
+return num * num;
+}
+```
+Note: Functions are “Objects Behind the Scenes” in JS.
+
+### Higher Order Functions:
+
+Functions that take other functions as arguments.
+
+### Call Back Functions:
+
+Functions that are passed as arguments.
+
+## Example
+
+```javascript
+// ----------------- Higher-order function -----------------
+function higherOrderFunction(callback) {
+  // Do some operations
+  let result = 10 + 20;
+
+  // ----------------- Call the callback function with the result-----------------
+  callback(result);
+}
+
+// ----------------- Callback function -----------------
+function callbackFunction(sum) {
+  console.log('The sum is: ' + sum);
+}
+
+// ----------------- Call the higher-order function and pass the callback function -----------------
+higherOrderFunction(callbackFunction);
+
+
+```
 
 ---
 
-## Coding Exercises
+## Coding Exercises 
 
 ### [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 

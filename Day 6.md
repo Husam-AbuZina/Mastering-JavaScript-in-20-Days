@@ -1,6 +1,6 @@
 # Day 6:
 
-## Summary of the course 
+## Summary of the course ✍️
 
 ### Generalization
 
@@ -52,11 +52,11 @@ higherOrderFunction(callbackFunction);
 
 ---
 
-## Coding Exercises 
+## Coding Exercises 👨‍💻
 
 ### [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 const squareList = arr => {
@@ -81,10 +81,9 @@ console.log(squaredIntegers);
 ---
 
 
-
 ### [Apply Functional Programming to Convert Strings to URL Slugs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // Only change code below this line
@@ -100,12 +99,12 @@ urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
 ---
 
 
-### Question 1: 
+### Question 1: 💡
 Implement a JavaScript function called mapAsync that takes an array and a callback function. The function should map each element of the array to a new value using the callback function asynchronously.
 
 The final result should be returned as a Promise.
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
  const mapAsync = async (arr, callback) => {
@@ -145,10 +144,10 @@ mapAsync(arr, callback)
 
 ---
 
-### Question 2: 
+### Question 2: 💡
 Write a JavaScript function called sumRange that calculates the sum of all integers in a given range. The function should use recursion to handle the calculation and demonstrate understanding of the call stack.
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function sumRangee(start, end) {

@@ -28,3 +28,4 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 
 #### JavaScript: The Hard Parts, v2
 -  [**Day 6**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%206.md)
+-  [**Day 7**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%207.md)

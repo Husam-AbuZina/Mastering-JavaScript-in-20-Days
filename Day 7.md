@@ -140,8 +140,8 @@ console.log(third()); // 2
         
       function callback(callback1, callback2, callback3) {
           return function (y){
-          let a = callback1(y);
-          let b = callback1(a);
+          let a = callback3(y);
+          let b = callback2(a);
           let c = callback1(b);
           
           return c;

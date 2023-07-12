@@ -1,7 +1,7 @@
 
 # Day 1:
 
-## Summary of the course
+## Summary of the course ✍️
 
 ### DOM (Document Object model)
 
@@ -81,11 +81,11 @@ Expression: are Values.
 
 ---
 
-## Coding Exercises
+## Coding Exercises 👨‍💻
 
 ### [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 let a = 5;
@@ -105,7 +105,7 @@ c *= 10;
 
 ### [Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 let myStr="This is the first sentence. ";
@@ -119,7 +119,7 @@ myStr += "This is the second sentence.";
 
 ### [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // Setup

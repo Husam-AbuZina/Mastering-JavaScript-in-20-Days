@@ -9,7 +9,7 @@
 
 # Coding
 
-### [Rick And Morty Alive List]([Link/of/the/project](https://github.com/Husam-AbuZina/Rick-and-Morty-API)https://github.com/Husam-AbuZina/Rick-and-Morty-API)
+### [Rick And Morty Alive List](https://github.com/Husam-AbuZina/Rick-and-Morty-API)
 
 #### My Code 
 

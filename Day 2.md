@@ -1,7 +1,7 @@
 
 # Day 2:
 
-## Summary of the course
+## Summary of the course ✍️
 
 ### Functions
 
@@ -90,11 +90,11 @@ console.log(isProgrammer); // Output: "Computer Scientist"
 
 ---
 
-## Coding Exercises
+## Coding Exercises 👨‍💻
 
 ### [Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // Setup
@@ -149,7 +149,7 @@ console.log(lookUpProfile("Akira", "likes")); // Output: ["Pizza", "Coding", "Br
 
 ### [Copy Array Items Using slice()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 
@@ -169,7 +169,7 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 
 ### [Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function spreadOut() {

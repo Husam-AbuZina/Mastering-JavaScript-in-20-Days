@@ -1,7 +1,7 @@
 
 # Day 4:
 
-## Summary of the course
+## Summary of the course ✍️
 
 ### Conditionals
 
@@ -27,7 +27,7 @@ console.log(isProgrammer); // Output: "Computer Scientist"
 Simply, Filters the array!.
 it makes a new array with the conditioned elements only.
 
-Example:
+Example: 
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -50,11 +50,11 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
 ---
 
-# Coding Exercises
+# Coding Exercises 👨‍💻
 
 ### [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function checkSign(num) {
@@ -73,7 +73,7 @@ console.log(checkSign(10)); // Output: positive
 
 ### [Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
@@ -104,7 +104,7 @@ console.log(golfScore(5, 4));  // Output: "Birdie"
 
 ### [Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // The global variable
@@ -237,7 +237,7 @@ console.log(JSON.stringify(ratings));
 
 ### [Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // The global variable

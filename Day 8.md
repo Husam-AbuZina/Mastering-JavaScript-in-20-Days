@@ -129,8 +129,6 @@ futureData.then(display); // the fullfilled array object value will be
 	console.log("Me first!"); 
 ```
 
-### General Notes:
-
 
 ## Coding Exercises 👨‍💻
 
@@ -144,10 +142,10 @@ The function should return an array of messages obtained from each task's execut
 
 You are only allowed to change the `executeInSequenceWithCBs` function or add new functions/code. You cannot modify the tasks' functions.
     
-    ### Solution: ✅
+### Solution: ✅
     
-    ```jsx
-    // Online Javascript Editor for free
+```jsx
+// Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
 const task1 = (cb) => setTimeout(() => {
@@ -202,13 +200,12 @@ const executeInSequenceWithCBs = (tasks, callback) => {
   })();
 };
 
-
-
 executeInSequenceWithCBs(asyncTasks, (results) => {
   console.log("All tasks completed!");
   console.log(results);
 });
-    ```
+
+```
     
 - Question 2 💡
     
@@ -220,10 +217,10 @@ The output of the `executeInParallelWithPromises` function should be an array 
 
 Each result should be an object with three keys: `apiName`, `apiUrl`, and `apiData`..
     
-    ### Solution: ✅
+### Solution: ✅
     
-    ```jsx
-   const executeInParallelWithPromises = (apis) => {
+   ```jsx
+const executeInParallelWithPromises = (apis) => {
   const promises = apis.map((api) =>
     fetch(api.apiUrl)
       .then((response) => response.json())
@@ -259,7 +256,8 @@ const apis = [
 executeInParallelWithPromises(apis)
   .then((results) => console.log(results))
   .catch((error) => console.error(error));
-    ```
+
+```
     
 - Question 3 💡
     
@@ -273,10 +271,58 @@ The output of the `executeInSequenceWithPromises` function should be an array 
 
 Each result should be an object with three keys: `apiName`, `apiUrl`, and `apiData`.
     
-    ### Solution: ✅
+### Solution: ✅
     
-    ```jsx
-// Solution in Progress [To-Do Question]
-    ```
+  ```jsx
+function mockApiCall(apiUrl) {
+  // Simulating an API call with a delay of 1 second
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      // Mocking the API data, replace this with your actual API call
+      const apiData = `Data from ${apiUrl}`;
+      resolve(apiData);
+    }, 1000);
+  });
+}
 
-    ---
+async function executeInSequenceWithPromises(apiArray) {
+  const results = [];
+
+  // Loop through the array of APIs
+  for (const api of apiArray) {
+    const { apiName, apiUrl } = api;
+    try {
+      // Fetch data for each API
+      const apiData = await mockApiCall(apiUrl);
+
+      // Save the result in the 'results' array
+      results.push({
+        apiName: apiName,
+        apiUrl: apiUrl,
+        apiData: apiData,
+      });
+    } catch (error) {
+      // Handle errors if needed
+      console.error(`Error fetching data from ${apiName}: ${error}`);
+    }
+  }
+
+  return results;
+}
+
+// Example usage:
+const apiArray = [
+  { apiName: 'API 1', apiUrl: 'https://api.example.com/data1' },
+  { apiName: 'API 2', apiUrl: 'https://api.example.com/data2' },
+  { apiName: 'API 3', apiUrl: 'https://api.example.com/data3' },
+];
+
+executeInSequenceWithPromises(apiArray)
+  .then((results) => {
+    console.log(results);
+  })
+  .catch((error) => {
+    console.error('Error executing APIs in sequence:', error);
+  });
+
+```

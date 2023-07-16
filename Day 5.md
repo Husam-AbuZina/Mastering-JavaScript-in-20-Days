@@ -1,18 +1,10 @@
 
-# Day 5:
-
-## Summary of the course
+# Day 5: 🙌
 
 ### Rick And Morty - ( Alive Characters ) Project.
 
 ---
 
-# Coding
+# Coding 👨‍💻
 
-### [Rick And Morty Alive List](https://github.com/Husam-AbuZina/Rick-and-Morty-API)
-
-#### My Code 
-
-```javascript
-// Some Code
-```
+### [Rick And Morty Alive List](https://github.com/Husam-AbuZina/Rick-and-Morty-API) ✅

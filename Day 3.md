@@ -1,6 +1,6 @@
 # Day 3:
 
-## Summary of the course
+## Summary of the course ✍️
 
 ### Operators
 
@@ -78,11 +78,11 @@ return arr1.length  > arr2.length
 
 ---
 
-## Coding Exercises
+## Coding Exercises 👨‍💻
 
 ### [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function nextInLine(arr, item) {
@@ -107,9 +107,9 @@ console.log("After: " + JSON.stringify(testArr));
 
 ### [Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
 
-#### My Solution 
+#### My Solution ✅
 
-```javascript
+```javascript 
 // Setup
 const outerWear = "T-Shirt";
 
@@ -129,7 +129,7 @@ myOutfit();
 
 ### [Local Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function myLocalScope() {
@@ -148,7 +148,7 @@ console.log(typeof myVar); // This will throw a ReferenceError, but the tests wi
 
 ### [Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 // Declare the myGlobal variable below this line
@@ -178,7 +178,7 @@ function fun2() {
 
 ### [Return a Value from a Function with Return](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return)
 
-#### My Solution 
+#### My Solution ✅
 
 ```javascript
 function timesFive (x) {

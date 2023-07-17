@@ -2,7 +2,7 @@
 
 ## Summary of the course ✍️
 
-## Types
+## Types 
 
 ### primitive Types:
 
@@ -116,7 +116,7 @@ Object.is(trendRate, 0);     // false
 
 - Question 1 💡
     
-Answer all the Object related questions in FreeCodeCamp.
+// Some Question
     
   ### Solution: ✅
     

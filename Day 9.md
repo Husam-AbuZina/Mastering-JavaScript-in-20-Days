@@ -176,10 +176,6 @@ const user1 = new userCreator("Eva", 9)
 user.increment()
 ```
 
-
-### General Notes:
-
-
 ## Coding Exercises 👨‍💻
 
 ---

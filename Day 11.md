@@ -22,7 +22,7 @@ Build interfaces and types as needed.
     
 ```jsx
 
-
+// Code in pogress
 
 ```
 
@@ -38,7 +38,7 @@ What will be the output of the following code snippet? Pick the right choice the
     
 ```jsx
 
-
+// Code in pogress
 
 ```
 
@@ -53,7 +53,7 @@ Write a function called isEmptyValue that checks if a given input is an empty va
     
 ```jsx
 
-
+// Code in pogress
 
 ```
 
@@ -68,7 +68,7 @@ Write a function called isEmptyValue that checks if a given input is an empty va
     
 ```jsx
 
-
+// Code in pogress
 
 ```
 

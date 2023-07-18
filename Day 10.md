@@ -165,10 +165,11 @@ const checkNaN = (value) => {
 }
 
 
-checkNaN(9);
-checkNaN('Husam');
+
 
 // --------------------------- Examples ---------------------------
+checkNaN(9);
+checkNaN('Husam');
 
 console.log(checkNaN('Husam')); // true
 console.log(checkNaN(9));  // false
@@ -197,3 +198,51 @@ console.log(isEmptyValue('Hello')); // Output: false
 
 
 ```
+
+---
+
+- Question 4 💡
+    
+Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
+    
+  ### Solution: ✅
+    
+```jsx
+
+function compareObjects(obj1, obj2) {
+  if (typeof obj1 !== 'object' || typeof obj2 !== 'object') {
+    return [obj1, obj2];
+  }
+
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  for (const key of keys1) {
+    if (obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+
+// --------------------------- Examples ---------------------------
+const person1 = { name: 'Husam', age: 20 };
+const person2 = { name: 'Hani', age: 20 };
+const person3 = { name: 'Sara', age: 30 };
+const num1 = 66;
+const num2 = 66;
+
+console.log(compareObjects(person1, person2)); // Output: true
+console.log(compareObjects(person1, person3)); // Output: false
+console.log(compareObjects(num1, num2)); // Output: [66, 66]
+
+
+```
+
+

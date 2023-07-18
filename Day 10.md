@@ -146,4 +146,31 @@ console.log(convertStringToNumber(123)); // Output: { value: 123, type: 'number'
 
 ```
 
+---
+
+- Question 2 💡
+    
+Write a function called checkNaN that takes a single argument and returns true if the argument is NaN and false otherwise.
+    
+  ### Solution: ✅
+    
+```jsx
+
+const checkNaN = (value) => {
+  if(isNaN(value)){
+      return true;
+  } else {
+      return false;
+  }
+}
+
+
+checkNaN(9);
+checkNaN('Husam');
+
+console.log(checkNaN('Husam'));
+console.log(checkNaN(9));
+
+```
+
 

@@ -36,4 +36,5 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 ---
 
 #### 3_Deep JavaScript Foundations, v3
--  [**Day 10**]()
+-  [**Day 10**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%210.md)
+-  [**Day 11**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%211.md)

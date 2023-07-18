@@ -116,10 +116,34 @@ Object.is(trendRate, 0);     // false
 
 - Question 1 💡
     
-// Some Question
+Write a function called convertStringToNumber that converts a string to a number using the unary plus operator.
+
+If the input is not a string, return an object of the input's value and type.
     
   ### Solution: ✅
     
 ```jsx
-// Solution in progress...
+
+function convertStringToNumber(input) {
+  if (typeof input === 'string') {
+    const number = +input; 
+    if (!isNaN(number)) {
+      return number;
+    }
+  }
+
+  // -------------------------------------------------------------------------------
+  // If input is not a string or couldn't be converted to a number, return an object with value and type
+  // ---------------------------------------------------------------------------------
+
+  return { value: input, type: typeof input };
+}
+
+// --------------------------- Examples ---------------------------
+console.log(convertStringToNumber('42')); // Output: 42
+console.log(convertStringToNumber('Hello')); // Output: NaN
+console.log(convertStringToNumber(123)); // Output: { value: 123, type: 'number' }
+
 ```
+
+

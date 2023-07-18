@@ -203,7 +203,9 @@ console.log(isEmptyValue('Hello')); // Output: false
 
 - Question 4 💡
     
-Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
+Write a function called compareObjects that takes 2 arguments of type "object" and compares them. If both arguments are equal, return true. If not, return false.
+
+If either argument is not of type "object", the function should return an array of the arguments.
     
   ### Solution: ✅
     
@@ -241,6 +243,47 @@ const num2 = 66;
 console.log(compareObjects(person1, person2)); // Output: true
 console.log(compareObjects(person1, person3)); // Output: false
 console.log(compareObjects(num1, num2)); // Output: [66, 66]
+
+
+```
+---
+
+- Question 5 💡
+    
+Write a function called complexCoercion that takes a single argument and checks if its type is primitive, and if so returns a coerced value according to the rules below.
+
+coercion rules:
+
+if input is primive and:
+if input is a number, convert to string and then return a boolean.
+if input is a string, return a boolean.
+if input is null or undefined, return false.
+If input is not a primitive type, return the argument.
+    
+  ### Solution: ✅
+    
+```jsx
+
+function complexCoercion(input) {
+  if (typeof input === 'number') {
+    return Boolean(input.toString());
+  } else if (typeof input === 'string') {
+    return Boolean(input);
+  } else if (input === null || input === undefined) {
+    return false;
+  } else {
+    return input;
+  }
+}
+
+
+// --------------------------- Examples ---------------------------
+console.log(complexCoercion(20)); // Output: true (coerces number to string and then to boolean)
+console.log(complexCoercion('Husam')); // Output: true (coerces string to boolean)
+console.log(complexCoercion(null)); // Output: false
+console.log(complexCoercion(undefined)); // Output: false
+console.log(complexCoercion({ name: 'John' })); // Output: { name: 'John' } (not a primitive type)
+
 
 
 ```

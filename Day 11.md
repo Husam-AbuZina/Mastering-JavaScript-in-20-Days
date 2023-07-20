@@ -204,13 +204,35 @@ C) 1, ReferenceError, ReferenceError
     
 Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
     
-  ### Solution: ✅
-    
 ```jsx
 
-// Code in pogress
+function testScope2() {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+}
+
+testScope2();
 
 ```
+
+### Choices:
+
+A) undefined, ReferenceError
+B) 1, undefined, ReferenceError
+C)undefined, undefined, ReferenceError
+D) 1, ReferenceError
+
+  ### Solution: ✅
+  
+C)undefined, undefined, ReferenceError
+
+ Both a and b are hoisted to the top of their respective scopes, but only the var variable a is initialized with undefined. The let variable b and the const variable c remain in the temporal dead zone and are not accessible before their declarations.
 
 
 ---

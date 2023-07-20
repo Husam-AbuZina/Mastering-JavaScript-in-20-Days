@@ -120,7 +120,43 @@ Build interfaces and types as needed.
     
 ```jsx
 
-// Code in pogress
+// Define the interface for the element of an array of promises
+interface PromiseItem {
+  identifier: string;
+  promise: Promise<any>;
+}
+
+// Define the interface for the output object
+interface OutputObject {
+  [key: string]: any;
+}
+
+// Define the input type for the convertToObj function
+type PromisesArray = PromiseItem[];
+
+// Define the convertToObj function
+async function convertToObj(promisesArray: PromisesArray): Promise<OutputObject> {
+  const result: OutputObject = {};
+
+  await Promise.all(
+    promisesArray.map(async ({ identifier, promise }) => {
+      result[identifier] = await promise;
+    })
+  );
+
+  return result;
+}
+
+// Example usage
+const arrayOfPromises: PromisesArray = [
+  { identifier: 'one', promise: Promise.resolve(1) },
+  { identifier: 'two', promise: Promise.resolve(2) },
+  { identifier: 'three', promise: Promise.resolve(3) },
+];
+
+convertToObj(arrayOfPromises).then((result) => {
+  console.log(result); // Output: { one: 1, two: 2, three: 3 }
+});
 
 ```
 

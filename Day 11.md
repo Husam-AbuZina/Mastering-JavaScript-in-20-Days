@@ -132,14 +132,35 @@ Build interfaces and types as needed.
     
 What will be the output of the following code snippet? Pick the right choice then justify your answer with an explanation.
     
-  ### Solution: ✅
-    
 ```jsx
 
-// Code in pogress
+function testScope1() {
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+testScope1();
 
 ```
 
+## Choices:
+
+A) undefined, undefined, undefined
+B) 1, undefined, ReferenceError
+C) 1, ReferenceError, ReferenceError
+D) 1, ReferenceError
+
+  ### Solution: ✅
+  
+C) 1, ReferenceError, ReferenceError
+
+ Because, variable "a" is declared as var, which can be hoisted iwth scope of global even before the interpeter reaches it, it's value is in the memory at the compile time.
 
 ---
 

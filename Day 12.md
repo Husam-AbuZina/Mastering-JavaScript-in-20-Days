@@ -270,169 +270,203 @@ teachers[1] = "Brain";    // Allowed!  // Mutate the array even though it is con
 
 ---
 
-## STATIC TYPING QUESTIONS:
+## Scope & Function Expressions:
 
 - Question 1 💡
-    
-Given the following promisesArray, convert the array into an object using the convertToObj function.
 
-You should apply typescript types to every promise, the input of convertToObj, and the output of convertToObj.
+Create a function called arrowHOF that takes an arrow function as input and returns a new arrow function that enhances the behavior of the input function.
 
-Build interfaces and types as needed.
+The enhanced function should accept additional arguments and execute the input function multiple times based on these arguments.
     
-  ### Solution: ✅
     
 ```jsx
 
-// Define the interface for the element of an array of promises
-interface PromiseItem {
-  identifier: string;
-  promise: Promise<any>;
+
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
 }
 
-// Define the interface for the output object
-interface OutputObject {
-  [key: string]: any;
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
 }
 
-// Define the input type for the convertToObj function
-type PromisesArray = PromiseItem[];
-
-// Define the convertToObj function
-async function convertToObj(promisesArray: PromisesArray): Promise<OutputObject> {
-  const result: OutputObject = {};
-
-  await Promise.all(
-    promisesArray.map(async ({ identifier, promise }) => {
-      result[identifier] = await promise;
-    })
-  );
-
-  return result;
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
 }
 
-// Example usage
-const arrayOfPromises: PromisesArray = [
-  { identifier: 'one', promise: Promise.resolve(1) },
-  { identifier: 'two', promise: Promise.resolve(2) },
-  { identifier: 'three', promise: Promise.resolve(3) },
-];
 
-convertToObj(arrayOfPromises).then((result) => {
-  console.log(result); // Output: { one: 1, two: 2, three: 3 }
-});
+const arrowHOF = (normalFunc) => {
+  // write your code here;
+}
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs 60 twice
+console.log(hofNormalFunc2(20, 35))(4); // logs 700 four times
+console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
+
 
 ```
-
----
-
-## SCOPE & HOISTING QUESTIONS:
-
-- Question 1 💡
-    
-What will be the output of the following code snippet? Pick the right choice then justify your answer with an explanation.
-    
-```jsx
-
-function testScope1() {
-  if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
-  }
-  console.log(a);
-  console.log(b);
-  console.log(c);
-}
-
-testScope1();
-
-```
-
-## Choices:
-
-A) undefined, undefined, undefined
-B) 1, undefined, ReferenceError
-C) 1, ReferenceError, ReferenceError
-D) 1, ReferenceError
-
   ### Solution: ✅
   
-C) 1, ReferenceError, ReferenceError
+```jsx
 
- Because, variable "a" is declared as var, which can be hoisted iwth scope of global even before the interpeter reaches it, it's value is in the memory at the compile time.
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
+};
 
----
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
+};
+
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
+};
+
+const arrowHOF = (normalFunc) => {
+  return (...args) => {
+    return (count) => {
+      let result = normalFunc(...args);
+      for (let i = 1; i < count; i++) {
+        console.log(result);
+      }
+      return result;
+    };
+  };
+};
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs 60 twice
+console.log(hofNormalFunc2(20, 35)(4)); // logs 700 four times
+console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
+
+
+```
+
+
+- Question 1 💡
+  
+Create a function called arrowHOF that takes an arrow function as input and returns a new arrow function that enhances the behavior of the input function.
+
+The enhanced function should accept additional arguments and execute the input function multiple times based on these arguments.
+    
+  ### Solution: ✅
+    
+```jsx
+
+
+
+```
 
 - Question 2 💡
+  
+Build a function called preserveThis that takes a function as input and returns a new arrow function that behaves the same way as the input function but preserves the original this context when used as a method of an object.
     
-Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
+
     
 ```jsx
 
-function testScope2() {
-  console.log(a);
-  console.log(b);
-  console.log(c);
-  if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
+
+// Example object
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
   }
+};
+
+const preserveThis = (func) => {
+  // write your code here;
+  return func;
 }
 
-testScope2();
+// Wrap the greet function using preserveThis
+const preservedGreet = preserveThis(obj.greet);
+
+// Call the wrapped function as a method of the object
+preservedGreet('Hello'); // Output: "Hello, John!"
+
 
 ```
 
-### Choices:
-
-A) undefined, ReferenceError
-B) 1, undefined, ReferenceError
-C)undefined, undefined, ReferenceError
-D) 1, ReferenceError
-
   ### Solution: ✅
-  
-C)undefined, undefined, ReferenceError
 
- Both a and b are hoisted to the top of their respective scopes, but only the var variable a is initialized with undefined. The let variable b and the const variable c remain in the temporal dead zone and are not accessible before their declarations.
+  ```jsx
+
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const preserveThis = (func) => {
+  return func.bind(func.__this);
+};
+
+// Wrap the greet function using preserveThis
+const preservedGreet = preserveThis(obj.greet);
+
+// Call the wrapped function as a method of the object
+preservedGreet('Hello'); // Output: "Hello, John!"
 
 
----
+```
 
 - Question 3 💡
-    
-Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
+  
+Consider the 2 following examples and distinguish the different output in each one with them with a reasoning.
+
+Example 1:
+      
     
 ```jsx
 
+function outer1() {
+  var x = 10;
 
-function testScope3() {
-  var a = 36;
-  let b = 100;
-  const c = 45;
+  var inner1 = function() {
+    console.log(x);
+  };
 
-  console.log([a, b, c]);
-
-  if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
-
-    console.log([a, b, c]);
-  }
-
-  console.log([a, b, c]);
+  inner1();
 }
 
-testScope3();
+outer1(); // Output: 10
+
+```
+
+Example 2:
+      
+    
+```jsx
+
+function outer2() {
+  var x = 10;
+
+  var inner2 = function() {
+    var x = 20;
+    console.log(x);
+  };
+
+  inner2();
+}
+
+outer2(); // Output: 20
+
+```
+
+
+  ### Solution: ✅
+
+  ```jsx
+
 
 
 ```
-    
-  ### Solution: ✅
 
-  B) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 36, 100, 45 ]
-
-the output will be [36, 100, 45] (for the first console.log), [1, 2, 3] (for the second console.log inside the if block), and [36, 100, 45] (for the third console.log after the if block).

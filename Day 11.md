@@ -241,12 +241,34 @@ C)undefined, undefined, ReferenceError
     
 Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
     
-  ### Solution: ✅
-    
 ```jsx
 
-// Code in pogress
+
+function testScope3() {
+  var a = 36;
+  let b = 100;
+  const c = 45;
+
+  console.log([a, b, c]);
+
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+
+    console.log([a, b, c]);
+  }
+
+  console.log([a, b, c]);
+}
+
+testScope3();
+
 
 ```
+    
+  ### Solution: ✅
 
+  B) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 36, 100, 45 ]
 
+the output will be [36, 100, 45] (for the first console.log), [1, 2, 3] (for the second console.log inside the if block), and [36, 100, 45] (for the third console.log after the if block).

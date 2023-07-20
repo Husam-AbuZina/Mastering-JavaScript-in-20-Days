@@ -55,7 +55,52 @@ is where to look for things (Varibles, Functions, ...)
 
 ### Compilation & Scope:
 
-![Alt Text](image_url)
+- Red Circle = Global Scope.
+- Blue Circle = otherClass Scope.
+- Green Circle = ask() Scope.
+
+![Pockets_explaing](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/assets/109718076/287bbd82-c95c-4fe9-89b7-611239a17746)
+
+### Shadowing:
+
+is when Two variables have the same name but different scopes.
+
+### TypeError:
+
+Illegal to execute an undefined function.
+
+### RunTimeError:
+
+Value that is not allower for that type.
+
+## Lexical Scope:
+
+- Red Circle = Global Scope.
+- Blue Circle = otherClass Scope.
+- Green Circle = ask() Scope.
+
+
+![Scope](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/assets/109718076/7f9751fd-ee75-4184-8f9f-32530dbe0bee)
+
+## Nested Scope
+
+- Red Circle = Global Scope.
+- Blue Circle = otherClass Scope.
+- Green Circle = ask() Scope.
+
+![NestedScope](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/assets/109718076/096f4f28-9167-4c48-8aad-589c32d63503)
+
+
+## Undefined Vs. Undeclared
+
+### Undefined:
+
+Exist and has no value.
+
+### Undeclared:
+
+Does not exist and has no value. ( Never formally declared. we has no marble for them. )
+
 
 ## Coding Exercises 👨‍💻
 

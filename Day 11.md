@@ -47,6 +47,15 @@ var studentCount: number = 16 - studentName; // ERROR: can't subtract string
 
 ---
 
+# Scope
+
+### Scope:
+
+is where to look for things (Varibles, Functions, ...)
+
+### Compilation & Scope:
+
+![Alt Text](image_url)
 
 ## Coding Exercises 👨‍💻
 

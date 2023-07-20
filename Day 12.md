@@ -172,6 +172,100 @@ const remindUnpaid = (recordIds) => {
 }
 ```
 
+---
+
+## Advanced Scope
+
+### lexical scope:
+
+ Decision I made at compile time.
+ 
+###  dynamic scope:
+   Decision I made at run time.
+
+ ## IIFE Pattern
+ 
+ IIFE : Immediately Invoked Function Expression.
+
+ ![IIFE](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/assets/109718076/6d034625-3b88-42d8-9045-ca4b538cdff6)
+
+- it does not start with the keyword “function”, that’s why it is called expression and not a function declaration.
+
+```jsx
+var teacher = "Kyle";
+
+// this IIFE is anonymous : 
+( function (teacher) {
+   console.log(teacher); // Suzy
+}) ("Suzy");
+
+console.log(teacher);
+
+// ------------------------------------------------------------
+
+var teacher;
+try {
+   taecher = fetchTeacher(1);
+}
+catch (err) {
+   teacher = "Kyle";
+}
+
+// ------------------------------------------------------------
+
+var teacher = (function getTeacher() {
+try {
+   taecher = fetchTeacher(1);
+}
+catch (err) {
+   teacher = "Kyle";
+}
+}) ();
+
+```
+
+## Block Scoping
+
+```jsx
+var teacher = "Kyle";
+
+{
+  let teacher = "Suzy"; // you can use them instead of a statement
+  console.log(teacher);
+}
+
+console.log(teacher);
+
+// -----------------------
+
+function diff(x, y) {  // Just a tmp variable we won't use it later.
+   if (x > y) {
+      var tmp = x;
+      x = y;
+      y = tmp;
+    }
+   return y - x;
+}
+```
+
+## const
+
+```jsx
+var teacher = "suzy";
+teacher = "Kyle";   // OK
+
+constmyTeacher =teacher;
+myTeacher = "Suzy";    // TypeError
+
+const teachers = ["Kyle", "Suzy"];
+teachers[1] = "Brain";    // Allowed!  // Mutate the array even though it is const xD.
+
+// const: for the rest of this block, i am not going to be re-assigned.
+
+// Advice: use var -> let -> const // Advice of the author of the course, Kyle Simpson.
+```
+
+
 ## Coding Exercises 👨‍💻
 
 ---

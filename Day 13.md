@@ -246,6 +246,17 @@ Without changing anything in the for loop's code itself, provide a solution to f
   
 ```jsx
 
+for (let i = 0; i < 5; i++) {
+  setTimeout(function() {
+    console.log("value of [i] is: ", i);
+  }, 100);
+}
+
+"value of [i] is: " 0
+"value of [i] is: " 1
+"value of [i] is: " 2
+"value of [i] is: " 3
+"value of [i] is: " 4
 
 
 ```
@@ -281,6 +292,18 @@ Provide a solution to fix it.
   
 ```jsx
 
+let array = []; // Move the array declaration outside the loop
+
+for (let i = 0; i < 5; i++) {
+  array.push(i);
+  console.log("Current array is: ", array);
+}
+
+"Current array is: [ 0 ]"
+"Current array is: [ 0, 1 ]"
+"Current array is: [ 0, 1, 2 ]"
+"Current array is: [ 0, 1, 2, 3 ]"
+"Current array is: [ 0, 1, 2, 3, 4 ]"
 
 
 ```
@@ -323,6 +346,21 @@ Provide a solution to fix it.
   
 ```jsx
 
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+"Current value of i is: 0"
+"Current value of i is: 1"
+"Current value of i is: 2"
+"Current value of i is: 3"
+"Current value of i is: 4"
 
 
 ```
@@ -341,6 +379,37 @@ Create a function called privateCounter() that behaves like a private counter. T
   
 ```jsx
 
+function privateCounter() {
+  let count = 0; // Private variable accessible only inside the closure
+
+  // Increment the count
+  function increment() {
+    count++;
+  }
+
+  // Get the current count
+  function getCount() {
+    return count;
+  }
+
+  // Return the methods as an object
+  return {
+    increment,
+    getCount,
+  };
+}
+
+// Example usage
+const counter = privateCounter();
+
+console.log(counter.getCount()); // Output: 0
+
+counter.increment();
+console.log(counter.getCount()); // Output: 1
+
+counter.increment();
+counter.increment();
+console.log(counter.getCount()); // Output: 3
 
 
 ```
@@ -357,6 +426,36 @@ Write a JavaScript function called generateFibonacci(count) that returns a closu
   
 ```jsx
 
+function generateFibonacci(count) {
+  let currentCount = 0;
+  let fibonacciArray = [];
+
+  function calculateFibonacci(n) {
+    if (n <= 1) return n;
+    return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
+  }
+
+  function generateNextFibonacci() {
+    if (currentCount < count) {
+      const nextFibonacci = calculateFibonacci(currentCount);
+      fibonacciArray.push(nextFibonacci);
+      currentCount++;
+      return nextFibonacci;
+    } else {
+      return "No more Fibonacci numbers.";
+    }
+  }
+
+  return generateNextFibonacci;
+}
+
+// Example usage:
+const generateNextFib = generateFibonacci(10);
+console.log(generateNextFib()); // Output: 0
+console.log(generateNextFib()); // Output: 1
+console.log(generateNextFib()); // Output: 1
+console.log(generateNextFib()); // Output: 2
+// ...and so on, up to the 10th Fibonacci number
 
 
 ```

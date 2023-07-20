@@ -422,6 +422,12 @@ preservedGreet('Hello'); // Output: "Hello, John!"
   
 Consider the 2 following examples and distinguish the different output in each one with them with a reasoning.
 
+  ```jsx
+
+
+
+```
+
 Example 1:
       
     
@@ -440,6 +446,16 @@ function outer1() {
 outer1(); // Output: 10
 
 ```
+
+  ### Solution Example 1: ✅
+
+  ```jsx
+
+// 20
+
+```
+
+Because, by returning the inner2 function from outer2, we create a closure that preserves access to the variable y, allowing us to invoke closureFunc() later and still access the value of y, which is 20.
 
 Example 2:
       
@@ -462,11 +478,12 @@ outer2(); // Output: 20
 ```
 
 
-  ### Solution: ✅
+  ### Solution Example 2: ✅
 
   ```jsx
 
-
+// 20
 
 ```
 
+Because, he inner function inner2 has its own local variable x, which is distinct from the outer variable x. When we invoke inner2() inside outer2, it logs the value of its local variable x, which is 20, due to variable shadowing. The outer variable x, defined in outer2, remains unaffected and retains its value 10.

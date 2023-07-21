@@ -4,7 +4,7 @@
 
 ## Advanced Scope
 
-### Hoisting:
+### Hoisting: 💎💎
 
 look ahead of the code and use all the possible variables in that scope.
 
@@ -68,7 +68,7 @@ var teacher = "Kyle";
 
 ---
 
-## Closure
+## Closure 💎💎
 
 ### Closure
 

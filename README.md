@@ -17,7 +17,7 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 
 ## Folder Structure 📁
 
-#### JavaScript: From First Steps to Professional
+#### JavaScript: From First Steps to Professional 🔥
 -  [**Day 1**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%201%20👨%E2%80%8D💻)
 -  [**Day 2**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%202.md)
 -  [**Day 3**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%203.md)
@@ -26,7 +26,7 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 
 ---
 
-#### JavaScript: The Hard Parts, v2
+#### JavaScript: The Hard Parts, v2 🔥🔥
 -  [**Day 6**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%206.md)
 -  [**Day 7**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%207.md)
 -  [**Day 8**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%208.md)
@@ -35,7 +35,7 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
    
 ---
 
-#### 3_Deep JavaScript Foundations, v3
+#### 3_Deep JavaScript Foundations, v3 🔥🔥🔥
 -  [**Day 10**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%2010.md)
 -  [**Day 11**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%2011.md)
 -  [**Day 12**](https://github.com/Husam-AbuZina/Mastering-JavaScript-in-20-Days/blob/main/Day%2012.md)

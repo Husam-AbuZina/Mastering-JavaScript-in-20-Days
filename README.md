@@ -1,5 +1,5 @@
 
-# Gaza Sky Geeks Learning Sprint - 20-Day Learning JavaScript Challenge
+# Gaza Sky Geeks Learning Sprint - 20-Day Learning JavaScript Challenge 
 
 Welcome to the 20-Day Learning JavaScript Challenge! 🚀
 
